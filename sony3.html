@@ -1,0 +1,38 @@
+
+
+
+<html lang="utf-8">
+    <head>
+    <title>Clampy Player | FlixPLay Streaming Service</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+        body
+        {
+            background-color: #000000;
+            color: #FFFFFF;
+            font-family: PT Sans;
+        }
+        </style>
+    </head>
+    <body>
+    <script type="1e3f59c55f171de90b2d095e-text/javascript" src="https://cdn.jsdelivr.net/clappr/latest/clappr.min.js"></script>
+    <script type="1e3f59c55f171de90b2d095e-text/javascript" src="http://unsecure-player.flixtv.xyz/subtitles.js"></script>
+    <script type="1e3f59c55f171de90b2d095e-text/javascript" src="http://unsecure-player.flixtv.xyz/audio-track-selector.js"></script>
+    <div id="player"></div>
+    <script type="1e3f59c55f171de90b2d095e-text/javascript">
+                var player = new Clappr.Player({
+                    source: "https://sonydai.akamaized.net/hls/live/2022316/DAI12ME/master.m3u8?hdnea=exp=1606707943~acl=/*~hmac=bee3fa3c308e0be232a7e53a82bb96d9547fadae7540e9460a99947a9e23ccf7",
+                    baseUrl: '/latest',
+                    mute: false,
+                    height: '100%',
+                    width: '100%',
+                    plugins: {
+                        core: [AudioTrackSelector]
+                    }
+                });
+                player.attachTo(document.getElementById('player'));
+            </script>
+    <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="1e3f59c55f171de90b2d095e-|49" defer=""></script></body>
+    </html>
